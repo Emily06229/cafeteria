@@ -1,38 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">">
     <title>Cafeteria San Francisco</title>
-    <style>
-        body {
-            background-color: #c2dbd8;
-        }
-
-        .cabecera derecha{
-            width: 80%;
-            background-color: antiquewhite;
-        }
-
-
-        a{
-            color: white;
-        }
-
-        .menu{
-            color: turquoise;
-        }
-
-        #btn-acerca-de{
-           background-color: black; 
-           /*el padding me da margenes internos en cada elemento*/
-           padding: 10px 30px 50px 50px;
-           /*el margin me da margenes externos en cada elemento*/
-           margin: 10px;
-           font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    </style>
+    
 </head>
+
 <body>
     <!--
     Los nombres de los proyectos no pueden tener espacios, por eso se usa el guion bajo (_)
@@ -43,50 +21,142 @@
     -->
     <!--Inicio del header-->
     <header>
-      <!--Menú de navegación-->  
-      <div class="cabecera-derecha">
-        <nav>
-            <a href="#" id="btn-acerca-de">Acerca de</a>
-            <a href="#" id="btn-menu">Menú</a>
-            <a href="#" id="btn-galeria">Galería</a>
-            <a class="menu" href="#" id="btn-ubicación">Ubicación</a>
-
-        </nav>
-        <div>
-            <h1>Cafetería <span>San Francisco</span></h1>
-            <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
+        <!--Menú de navegación-->
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="#"></a>
+            </nav>
         </div>
-      </div>
+        <div class="cabecera-derecha">
+            <nav>
+                <a href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-menu">Menú</a>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a class="menu" href="#" id="btn-ubicación">Ubicación</a>
+
+            </nav>
+            <div>
+                <h1>Cafetería <span>San Francisco</span></h1>
+                <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
+            </div>
+        </div>
     </header><!--Fin del header-->
     <!--Inicio de la sección main-->
-<section id="acerca-de">
-    <div>
+    <section id="acerca-de">
         <div>
-            <img src="img/acerca-de.jpg" alt="Acerca de lobby">
+            <div>
+                <img src="img/acerca-de.jpg" alt="Acerca de lobby">
+            </div>
+            <article>
+                <h3>Acerca de</h3>
+                <p>
+                    La cafetería fue fundada en 2006 en la República del Salvador,
+                    un emblemático sector de Quito, Ecuador. Desde sus primeros días,
+                    se destacó por su ambiente acogedor y su enfoque en ofrecer una experiencia única,
+                    que combinaba una excelente selección de cafés con un espacio ideal para el encuentro social y la
+                    relajación.
+                    A lo largo de los años, se ha convertido en un referente para
+                    los habitantes de la zona y los turistas que visitan la capital,
+                    quienes aprecian no solo la calidad de sus productos,
+                    sino también el ambiente cálido y personalizado que ofrece.
+                    Con el paso del tiempo, la cafetería ha logrado mantenerse vigente,
+                    adaptándose a las nuevas tendencias del mercado sin perder su esencia.
+                    Su compromiso con la calidad, la atención al cliente y la innovación ha sido clave en su éxito.
+                    Además, se ha convertido en un lugar de encuentro para los amantes del buen café,
+                    donde se pueden disfrutar tanto de bebidas clásicas como de nuevas creaciones.
+                    Hoy en día, la cafetería sigue siendo un punto de referencia en la República del Salvador,
+                    consolidando su reputación como un lugar donde la tradición y la modernidad se encuentran
+                    para ofrecer una experiencia inolvidable.
+                </p>
+            </article>
         </div>
-        <article>
-            <h3>Acerca de</h3>
-            <p>
-                La cafetería fue fundada en 2006 en la República del Salvador, 
-                un emblemático sector de Quito, Ecuador. Desde sus primeros días, 
-                se destacó por su ambiente acogedor y su enfoque en ofrecer una experiencia única, 
-                que combinaba una excelente selección de cafés con un espacio ideal para el encuentro social y la relajación. 
-                A lo largo de los años, se ha convertido en un referente para
-                los habitantes de la zona y los turistas que visitan la capital, 
-                quienes aprecian no solo la calidad de sus productos, 
-                sino también el ambiente cálido y personalizado que ofrece.
-                Con el paso del tiempo, la cafetería ha logrado mantenerse vigente,
-                adaptándose a las nuevas tendencias del mercado sin perder su esencia. 
-                Su compromiso con la calidad, la atención al cliente y la innovación ha sido clave en su éxito.
-                Además, se ha convertido en un lugar de encuentro para los amantes del buen café, 
-                donde se pueden disfrutar tanto de bebidas clásicas como de nuevas creaciones. 
-                Hoy en día, la cafetería sigue siendo un punto de referencia en la República del Salvador, 
-                consolidando su reputación como un lugar donde la tradición y la modernidad se encuentran 
-                para ofrecer una experiencia inolvidable.
-            </p>
-        </article>
-    </div>
 
-</section>
+    </section><!--Fin Acerca de-->
+    <!--Inicio de la sección menú-->
+    <section class="menu">
+        <div class="contenedor">
+            <h3 class="titulo" id="platillos">Menú</h3>
+            <div class="contenedor-menu2">
+                <article>
+                    <p class="categoria">De comer</p>
+                    <div class="platillo">
+                        <p class="nombre">Arroz con camarón</p>
+                        <p class="precio">$8.50</p>
+                        <p class="descripcion">El arroz con camarón viene arroz, camarón, platano, yuca</p>
+                    </div>
+                    <div class="platillo">
+                        <p class="nombre">Lasaña</p>
+                        <p class="precio">$10.00</p>
+                        <p class="descripcion">La lasaña contiene, hojas de pasta, con una mezcla de slasa pomodoro y carne molida</p>
+                    </div>
+                    <div class="platillo">
+                        <p class="nombre">Pizza</p>
+                        <p class="precio">$15.00</p>
+                        <p class="descripcion">La pizza cuenta con una masa gruesa, queso, salami, aceitunas</p>
+                    </div>
+                    <div class="platillo">
+                        <p class="nombre">Pasta</p>
+                        <p class="precio">$7.50</p>
+                        <p class="descripcion">La pasta viene con salsa pesto, atún, queso rallado</p>
+                    </div>
+
+                    </div>
+                </article><!--Fin de la sección de comida-->
+                <!--Inicio de sección bebidas-->
+                <article>
+                    <p class="categoria"Bebidas></p>
+                    <div class="platillo">
+                        <p class="nombre">Café</p>
+                        <p class="precio">1.50</p>
+                        <p class="descripcion">Café americano</p>
+                    </div>
+                    <div class="platillo">
+                        <p class="nombre">Limonada</p>
+                        <p class="precio">2.00</p>
+                        <p class="descripcion">Limonada fría endulzada con stevia</p>
+                    </div>
+                    <div class="platillo">
+                        <p class="nombre">Infusión</p>
+                        <p class="precio">3.00</p>
+                        <p class="descripcion">Infusiones frutales diversas</p>
+                    </div>
+                    <div class="platillo">
+                        <p class="nombre">Agua de Jmaica</p>
+                        <p class="precio">1.00</p>
+                        <p class="descripcion">Agua fresca de jamaica</p>
+                    </div>
+                </article><!--Fin de la sección de bebidas-->
+            </div>
+        </div>
+    </section><!--Fin de la sección menú-->
+    <!--Inicio de la sección galería-->
+    <section class="galeria" id="galeria">
+        <div class="foto">
+            <img src="img/1.jpg" alt="cafe">
+        </div>
+        <div class="foto">
+            <img src="img/2.jpg" alt="barra">
+        </div>
+        <div class="foto">
+            <img src="img/3.jpg" alt="cafe con pan">
+        </div>
+        <div class="foto">
+            <img src="img/4.jpg" alt="lugar">
+        </div>
+        <div class="foto">
+            <img src="img/5.jpg" alt="cafe con forma">
+        </div>
+        <div class="foto">
+            <img src="img/6.jpg" alt="cafe decorado">
+        </div>
+        <div class="foto">
+            <img src="img/7.jpg" alt="cafe sernido">
+        </div>
+        <div class="foto">
+            <img src="img/8.jpg" alt="pan">
+        </div>
+
+    </section><!--Fin galeria-->
 </body>
+
 </html>

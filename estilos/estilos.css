@@ -1,7 +1,60 @@
 /*Aquí va a ir los estilos css para el index.html*/
 *{
+    /*Elimina el margen por defecto de todos los elementos HTML*/
     margin: 0;
+    /*Elimina el padding por defecto de todos los elementos HTML*/
     padding: 0;
+    /*Definimos el modelo de cajas para navegadores basados en webkit
+    googleChrome, internet explorer, edge*/ 
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en mozilla
+    firefox, opera*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en el estandar*/
     box-sizing: border-box;
-    background-color: yellow;
+}
+/*Definimos los estilos para el body*/
+body{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/*Trabajamos en los estilos de la clase contenedor*/
+.contenedor{
+    /*Definir el ancho del contenedor*/
+    width: 90%;
+    /*Definimos el color del contenedor*/
+    background-color: aqua;
+    /*Definimos la anchura maxima del contenedor*/
+    max-width: 1000px;
+    /*Definimos el margen en automatico para centrar el contenedor*/
+    margin:auto;
+    /*Ocultamos el desbordaiento del contenedor*/
+    overflow: hidden;
+}
+/*Le damos estilos al header*/
+header{
+    /*Definimos el tamaño del header a un 100%*/
+    width: 100%;
+    background: url('../img/bg.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center 0;
+    /*Le damos estilos al header y que busque una clase que se llame contenedor*/
+    header .contenedor{
+        position: relative;
+        height: 700px;
+    }
+    /*Le damos estilos al menú dentro del header*/
+    header .menu{
+        /*Le damos el tamaño de la anchura*/
+        width: 100%;
+        /*Le decimos que alinee el texto a la derecha*/
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(52, 201, 35);
 }
